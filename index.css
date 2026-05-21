@@ -1,0 +1,62 @@
+ 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  font-size: 1rem;
+}
+
+ 
+@media (max-width: 768px) {
+  .navbar ul {
+    font-size: 0.9rem;
+  }
+  .logo, .username {
+    font-size: 0.9rem;
+  }
+}
+
+ 
+@media (max-width: 480px) {
+  .navbar ul {
+    display: none; /* hide links */
+  }
+  .logo, .username {
+    font-size: 0.8rem;
+  }
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+ 
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero img {
+    width: 70%;
+  }
+}
+
+ 
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column; /* stack text & image */
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 1.2rem;
+  }
+  .hero img {
+    width: 90%;
+  }
+}
